@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>where2live</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/where2live/image/upload/v1606836143/where2Live/Assets/where2live-icon-1_agi83h.svg">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  </head>
+
+  <body>
+    <%= render 'shared/flashes' %>
+    <%# <!-- app/views/layouts/application.html.erb -->
+    <body> %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
+    <%# </body> %>
+
+    <%= yield %>
+    <script type="text/javascript">
+      // alert("<%#= params[:action] %>")
+      <% if params[:action] == "show" %>
+      const iconMarker = document.querySelector(".fa-map-marker-alt")
+      if (iconMarker) {
+        iconMarker.classList.add("active")
+      }
+
+      <% elsif params[:action] == "index" %>
+      const iconStar = document.querySelector(".fa-star")
+        if (iconStar) {
+          iconStar.classList.add("active")
+        }
+
+      <% elsif params[:action] == "show" %>
+      const iconUser = document.querySelector(".fa-user")
+        if (iconUser) {
+          iconUser.classList.add("active")
+        }
+      <% end %>
+    </script>
+
+  </body>
+</html>

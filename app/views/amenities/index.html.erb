@@ -1,0 +1,63 @@
+<hr class="hr-1">
+<div class="container">
+
+  <%= link_to cities_path do %>
+  <i class="fas fa-arrow-left back-arrow"></i>
+  <% end  %>
+
+  <img class="logo" src="https://res.cloudinary.com/where2live/image/upload/v1606838131/where2Live/Assets/where2live-logo_tklfqh.svg">
+  <h1>What are you looking for next to your new home?</h1>
+
+  <hr class="hr-2 mb-4">
+
+    <div class="justify-content-center">
+      <div class="text-center">
+
+        <div class="pt-4">
+          <div class="row d-flex">
+            <div class="clickable" data-amenity="supermarket">
+              <i class="fas fa-shopping-cart"></i>
+              <small class="small-supermercado">Market</small>
+            </div>
+
+            <div class="clickable" data-amenity="hospital">
+              <i class="fas fa-stethoscope"></i>
+              <small>Hospital</small>
+            </div>
+          </div>
+
+          <div class="row d-flex">
+            <div class="clickable" data-amenity="gym">
+              <i class="fas fa-dumbbell"></i>
+              <small>Gym</small>
+            </div>
+
+            <div class="clickable" data-amenity="mobility">
+              <i class="fas fa-bicycle"></i>
+              <small>Mobility</small>
+            </div>
+          </div>
+
+          <div class="row d-flex">
+            <div class="clickable" data-amenity="restaurant">
+              <i class="fas fa-utensils"></i>
+              <small>Restaurant</small>
+            </div>
+
+            <div class="clickable" data-amenity="school">
+              <i class="fas fa-graduation-cap"></i>
+              <small>School</small>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <button class='btn btn-primary w-100' id="btn-amenities">
+    Next step <i class="fas fa-angle-right"></i>
+  </button>
+
+</div>

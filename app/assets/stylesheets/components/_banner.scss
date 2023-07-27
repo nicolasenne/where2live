@@ -1,0 +1,66 @@
+.banner-profile {
+  background-image: url(https://res.cloudinary.com/where2live/image/upload/v1607364446/where2Live/Assets/Ellipse_4_vvrs2k.png);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 300px;
+  width: 100%;
+  margin-right: 0 !important;
+  top: -70px;
+  position: relative;
+}
+
+.banner-profile h1 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.banner-profile p {
+  font-size: 20px;
+  color: white;
+
+}
+
+.users-pictures {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.pin-profile {
+  color: #fff;
+  padding-right: 2px;
+  font-size: 18px;
+}
+
+.wls {
+  margin-bottom: 70px;
+  height: 30vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-profile{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn-ghost-profile{
+  color: $live-blue;
+  border: 1px solid white;
+  padding: 10px 24px;
+  font-weight: lighter;
+  display:block;
+  width: 250px;
+  margin-top: 0.5rem;
+  // margin: 1.5rem;
+}
+
+.container-btn{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
